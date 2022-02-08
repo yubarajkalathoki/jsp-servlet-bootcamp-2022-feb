@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .container{
+                width: 40%;
+                margin: auto;
+                border: 2px solid black;
+                padding: 45px;
+            }
+
+            #myForm table, tr, th ,td ,input{
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Create User</h1>
+            <form action="registerUser" method="post" id="myForm">
+                <table>
+                    <tr>
+                        <th>Enter First Name:</th>
+                        <td><input type="text" name="fn" placeholder="Enter your name" ></td>
+                    </tr>
+                    <tr>
+                        <th>Enter Last Name:</th>
+                        <td><input type="text" name="last_name"  placeholder="Enter your Last Name" ></td>
+                    </tr>
+
+                    <tr>
+                        <th>Select Gender</th>
+                        <td><input type="radio" name="gender" value="m">Male &nbsp; 
+                            <input type="radio" name="gender" value="f">Female</td>
+                    </tr>
+
+                    <tr>
+                        <th>Enter your address:</th>
+                        <td><input type="text" name="address"  placeholder="Enter your address"></td>
+                    </tr>
+
+                    <tr>
+                        <th>Enter your Mobile Number</th>
+                        <td><input type="text" name="mobile_number" ></td>
+                    </tr>
+
+                    <tr>
+                        <td><button type="submit">Register</button></td>
+                        <td><button type="reset">Reset</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>
